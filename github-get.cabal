@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 364ac76fdbbb3b33a28ea026f7b23c3f342ef896e6a1e6934e23eaea0a7c63d8
+-- hash: a1d3141659180650deb7700dd84eeea54f1ed3c7a4ff757ba20e9a3b08aa1a17
 
 name:           github-get
 version:        0.1.0.0
@@ -36,14 +36,10 @@ library
   build-depends:
       aeson
     , base >=4.7 && <5
-    , hashmap
     , http-client
-    , http-client-tls
     , servant
     , servant-client
-    , split
     , text
-    , utf8-string
   default-language: Haskell2010
 
 executable github-get-exe
@@ -57,14 +53,10 @@ executable github-get-exe
       aeson
     , base >=4.7 && <5
     , github-get
-    , hashmap
     , http-client
-    , http-client-tls
     , servant
     , servant-client
-    , split
     , text
-    , utf8-string
   default-language: Haskell2010
 
 test-suite github-get-test
@@ -79,12 +71,8 @@ test-suite github-get-test
       aeson
     , base >=4.7 && <5
     , github-get
-    , hashmap
     , http-client
-    , http-client-tls
     , servant
     , servant-client
-    , split
     , text
-    , utf8-string
   default-language: Haskell2010
